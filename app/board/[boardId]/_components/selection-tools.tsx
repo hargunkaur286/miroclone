@@ -29,7 +29,7 @@ export const SelectionTools = memo(({
     const liveLayerIds = storage.get("layerIds");
     const indices: number[] = [];
 
-    const arr = liveLayerIds.toArray();
+    const arr = liveLayerIds.toImmutable();
 
     for (let i = 0; i < arr.length; i++) {
       if (selection.includes(arr[i])) {
@@ -51,7 +51,7 @@ export const SelectionTools = memo(({
     const liveLayerIds = storage.get("layerIds");
     const indices: number[] = [];
 
-    const arr = liveLayerIds.toArray();
+    const arr = liveLayerIds.toImmutable();
 
     for (let i = 0; i < arr.length; i++) {
       if (selection.includes(arr[i])) {
@@ -121,7 +121,7 @@ export const SelectionTools = memo(({
           </Button>
         </Hint>
       </div>
-      
+
       <div className="flex items-center pl-2 ml-2 border-l border-neutral-200">
         <Hint label="Delete">
           <Button
