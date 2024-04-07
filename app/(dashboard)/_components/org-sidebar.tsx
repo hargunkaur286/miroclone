@@ -24,7 +24,7 @@ export const OrgSidebar = () => {
       <Link href="/">
         <div className="flex items-center gap-x-2">
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="Logo"
             height={60}
             width={60}
