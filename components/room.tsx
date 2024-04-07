@@ -12,7 +12,6 @@ interface RoomProps {
   roomId: string;
   fallback: NonNullable<ReactNode> | null;
 };
-
 export const Room = ({ 
   children,
   roomId,
@@ -24,8 +23,6 @@ export const Room = ({
       initialPresence={{
         cursor: null,
         selection: [],
-        pencilDraft: null,
-        penColor: null,
       }}
       initialStorage={{
         layers: new LiveMap<string, LiveObject<Layer>>(),
